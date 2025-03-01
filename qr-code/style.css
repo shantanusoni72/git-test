@@ -26,7 +26,7 @@ body {
 }
 
 .qr-code-container {
-    width: 16%;
+    width: 20%;
     background-color: var(--white);
     padding: 18px;
     border-radius: 20px;
@@ -34,6 +34,7 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 16px;
+    padding-bottom: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -44,12 +45,12 @@ body {
 
 .qr-code-container h2 {
     color: var(--color-slate-900);
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .qr-code-container p {
     color: var(--color-slate-500);
-    font-size: 14px;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 1024px) {
