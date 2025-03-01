@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Figtree";
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+:root {
+    --yellow: #F4D04E;
+    --grey-950: #111111;
+    --grey-500: #6B6B6B;
+    --white: #FFFFFF;
+    --ff-primary: "Figtree";
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--ff-primary);
+    background-color: var(--yellow);
+}
+
+.blog-preview-card {
+    width: 25%;
+    display: inherit;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.blog-preview-card-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.blog-preview-card label {
+    width: fit-content;
+    background-color: var(--yellow);
+    border-radius: 10px;
+    font-weight: 700;
+    padding-block: 4px;
+    padding-inline: 8px;
+}
+
+.blog-preview-card h2 {
+    font-size: 28px;
+    color: var(--grey-950);
+    font-family: 700;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.blog-preview-card h2:hover {
+    color: var(--yellow);
+}
+
+.blog-preview-card p {
+    font-size: 20px;
+    color: var(--grey-500);
+    font-weight: 600;
+}
+
+.blog-preview-card author {
+    font-size: 18px;
+    font-weight: 700;
+    display: inherit;
+    align-items: center;
+    gap: 10px;
+}
+
+author {
+    display: block;
+}
+
+.blog-preview-card author::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./assets/images/image-avatar.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.blog-preview-card span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+    .blog-preview-card {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .blog-preview-card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog-preview-card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .blog-preview-card {
+        width: 70%;
+        gap: 10px;
+    }
+
+    .blog-preview-card h2 {
+        font-size: 22px;
+    }
+
+    .blog-preview-card p {
+        font-size: 16px;
+    }
+}
