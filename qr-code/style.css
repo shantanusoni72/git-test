@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('./public/Outfit/Outfit-VariableFont_wght.ttf');
+}
+
+:root {
+    --color-slate-300: #D5E1EF;
+    --color-slate-500: #68778D;
+    --color-slate-900: #1F314F;
+    --white: #FFFFFF;
+    --ff-primary: 'Outfit';
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-slate-300);
+    font-family: 'Outfit';
+}
+
+.qr-code-container {
+    width: 16%;
+    background-color: var(--white);
+    padding: 18px;
+    border-radius: 20px;
+    display: inherit;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.qr-code-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.qr-code-container h2 {
+    color: var(--color-slate-900);
+    font-size: 20px;
+}
+
+.qr-code-container p {
+    color: var(--color-slate-500);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+    .qr-code-container {
+        width: 30%;
+    }
+
+    .qr-code-container h2 {
+        font-size: 24px;
+    }
+    
+    .qr-code-container p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .qr-code-container {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .qr-code-container {
+        width: 70%;
+    }
+
+    .qr-code-container h2 {
+        font-size: 20px;
+    }
+    
+    .qr-code-container p {
+        font-size: 16px;
+    }
+}
